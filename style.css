@@ -222,6 +222,7 @@
   
   .yellow__bar img {
     margin: 30px 60px;
+    max-height: 50%;
   }
   
   .yellow__bar p {
@@ -277,6 +278,7 @@
   
     .yellow__bar img {
       margin: 20px 40px;
+      max-height: 50%;
     }
   
     .yellow__bar p {
