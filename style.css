@@ -407,6 +407,7 @@
   
   .contact__bar img {
     margin-right: 60px;
+    max-height: 50%;
   }
   
   .contact__bar p {
