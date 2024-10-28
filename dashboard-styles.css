@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.comparison-slider {
+    position: relative;
+    max-width: 800px; /* Set max width */
+    margin: auto;
+    overflow: hidden; /* Hide overflowing images */
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    width: 100%; /* Make images responsive */
+    display: block;
+    position: absolute; /* Overlap images */
+    top: 0;
+    left: 0;
+}
+
+.before {
+    z-index: 1; /* Underneath */
+}
+
+.after {
+    z-index: 2; /* On top */
+    clip: rect(0, 400px, 300px, 0); /* Initial clip size */
+}
+
+.slider {
+    position: absolute;
+    z-index: 3; /* On top of images */
+    cursor: ew-resize; /* Change cursor style */
+    width: 5px; /* Slider handle width */
+    height: 100%; /* Full height of the image */
+    background-color: red; /* Slider color */
+    left: 400px; /* Initial position */
+}
+.sketch {
+    max-width: 50%;
+    height: auto;
+    margin: 10px 0;
+    padding-right: 10px;
+}
+
+.render {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin: 0;
+}
