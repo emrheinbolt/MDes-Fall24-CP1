@@ -14,8 +14,13 @@ header {
     text-align: center;
 }
 
-h1, h2 {
+h1 {
     margin: 20px 0;
+}
+
+h2 {
+    margin: 20px;
+    padding-top: 40px;
 }
 
 main {
@@ -27,22 +32,37 @@ main {
 }
 
 .image-container {
-    display: flex; /* Use flexbox for the image container */
-    justify-content: space-between; /* Space between images */
-    margin-bottom: 20px; /* Spacing below images */
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
 }
 
 .sketch, .render {
-    flex: 1; /* Allow sketches to grow */
-    max-width: 45%; /* Maximum width for each sketch */
-    margin: 10px; /* Margin around each sketch */
-    text-align: center; /* Center align text below sketches */
+    flex: 1 1 45%; 
+    max-width: 45%; 
+    margin: 10px 0;
+    text-align: center;
 }
 
 .sketch img, .render img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: add rounded corners */
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+#render .render {
+    max-width: 100%; 
+    margin: 20px 0; 
+    padding: 0; 
+}
+
+#render .render img {
+    width: 100vw; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 0; 
 }
 
 footer {
@@ -54,5 +74,5 @@ footer {
 }
 
 footer .image-container {
-    margin-top: 20px; /* Space above images in footer */
+    margin-top: 20px;
 }
