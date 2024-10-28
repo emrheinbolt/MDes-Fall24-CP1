@@ -74,3 +74,4 @@ const riddles = [
       hintText.textContent = `Hint: ${riddles[currentRiddle].hint}`;
     }
   }
+  
