@@ -23,56 +23,35 @@ main {
     margin-bottom: 0;
 }
 
-.comparison-slider {
-    position: relative;
-    max-width: 800px; /* Set max width */
-    margin: auto;
-    overflow: hidden; /* Hide overflowing images */
+.container {
+    display: flex;
+    flex-direction: column; /* Default direction */
+    padding: 20px;
 }
 
-.img-container {
-    position: relative;
-    width: 100%;
+.image-container {
+    display: flex; /* Use flexbox for the image container */
+    justify-content: space-between; /* Space between images */
+    margin-bottom: 20px; /* Spacing below images */
 }
 
-.image {
-    width: 100%; /* Make images responsive */
-    display: block;
-    position: absolute; /* Overlap images */
-    top: 0;
-    left: 0;
-}
-
-.before {
-    z-index: 1; /* Underneath */
-}
-
-.after {
-    z-index: 2; /* On top */
-    clip: rect(0, 400px, 300px, 0); /* Initial clip size */
-}
-
-.slider {
-    position: absolute;
-    z-index: 3; /* On top of images */
-    cursor: ew-resize; /* Change cursor style */
-    width: 5px; /* Slider handle width */
-    height: 100%; /* Full height of the image */
-    background-color: red; /* Slider color */
-    left: 400px; /* Initial position */
-}
 .sketch {
-    max-width: 50%;
-    height: auto;
-    margin: 10px 0;
-    padding-right: 10px;
+    flex: 1; /* Allow sketches to grow */
+    max-width: 45%; /* Maximum width for each sketch */
+    margin: 10px; /* Margin around each sketch */
+    text-align: center; /* Center align text below sketches */
+}
+
+.sketch img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
 }
 
 .render {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-    padding-right: 10px;
+    flex: 1; /* Allow renders to grow */
+    max-width: 40%; /* Maximum width for each render */
+    margin: 10px; /* Margin around each render */
 }
 
 footer {
@@ -81,4 +60,8 @@ footer {
     background: #333;
     color: #fff;
     margin: 0;
+}
+
+footer .image-container {
+    margin-top: 20px; /* Space above images in footer */
 }

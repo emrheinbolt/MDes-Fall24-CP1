@@ -9,46 +9,77 @@
 <body>
     <header>
         <h1>Car Dashboard Project Documentation</h1>
-        <p>Documenting my ideation and development process for the 3D object project.</p>
+        <p>Documenting my ideation and development process for a re-imagined Tesla Model 3 dashboard.</p>
     </header>
     <main>
-        <div class="comparison-slider">
-            <div class="img-container">
-                <img src="Images/before.png" alt="Before Image" class="image before">
-                <img src="Images/after.png" alt="After Image" class="image after">
-                <div class="slider" onclick="slide(event)"></div>
+        <div class="container">
+            <div class="image-container">
+                <div class="sketch">
+                    <img src="Images/dash-sketch.png" alt="Sketch 1">
+                    <h2>Rough Sketch</h2>
+                </div>
+                <div class="sketch">
+                    <img src="Images/Tesla-ideas.png" alt="Sketch 2">
+                    <h2>Sketching in Figma</h2>
+                </div>
             </div>
+
+            <section id="ideation">
+                <h2>Part 1</h2>
+                <p>To get a quick start on my project, I found a car dashboard <a href="https://free3d.com/3d-model/painel-simples-350409.html" target="_blank">here</a> that had potential to be molded into a new and improved Tesla Model 3 dashboard. I then began removing things such as the gear shift, patching up holes, and adjusting the location of the steering wheel.</p>
+                <h3>Base for the New Dashboard</h3>
+                <div class="container">
+                    <img src="Images/dash1.png" alt="dash 1" class="sketch">
+                    <img src="Images/dash2.png" alt="dash 2" class="sketch">
+                </div>
+            </section>
+           
+            <section id="Part 2">
+                <h2>Part 2</h2>
+                <p>Adding context, materials, and the screen. I found an hdri on polyhaven that looked pretty realistic <a href="https://polyhaven.com/a/goegap_road" target="_blank">here</a>, so I downloaded that and found a quick <a href="https://brandon3d.com/how-to-rotate-hdri-in-blender-3d/"> refresher tutorial </a> on how to rotate it around the car so the dashboard would be facing the road.</p>
+                <h3>Week 2</h3>
+            <div class="container">
+                <div class="sketch">
+                    <img src="Images/dash3.png" alt="dashboard">
+                </div>
+                <div class="sketch">
+                    <img src="Images/dash4.png" alt="dashboard">
+                </div>
+            </div>
+
+            <section id="learning-approach">
+                <h2>Learning Approach</h2>
+                <p>Throughout this project, I had to learn new software and work with unfamiliar concepts. I focused on:</p>
+                <ul>
+                    <li>Online tutorials and courses</li>
+                    <li>Documentation and user forums</li>
+                    <li>Experimentation and practice</li>
+                </ul>
+            </section>
+
+            <section id="renders">
+                <h2>Renders</h2>
+                <p>Below are the renders of the objects created during this project:</p>
+                <div class="image-container">
+                    <img src="Images/HOME_LOWFI.png" alt="Render 1" class="render">
+                    <img src="Images/Tesla-screen.png" alt="Render 2" class="render">
+                </div>
+            </section>
         </div>
-        <section id="ideation">
-            <h2>Ideation</h2>
-            <p>In the initial stages of my project, I explored various concepts and ideas. I sketched multiple designs to visualize my thoughts.</p>
-            <h3>Sketches</h3>
-            <img src="Images/dash-sketch.png" alt="Sketch 1" class="sketch">
-            <img src="Images/Tesla-ideas.png" alt="Sketch 2" class="sketch">
-        </section>
-
-        <section id="learning-approach">
-            <h2>Learning Approach</h2>
-            <p>Throughout this project, I had to learn new software and work with unfamiliar concepts. I focused on:</p>
-            <ul>
-                <li>Online tutorials and courses</li>
-                <li>Documentation and user forums</li>
-                <li>Experimentation and practice</li>
-            </ul>
-        </section>
-
-        <section id="renders">
-            <h2>Renders</h2>
-            <p>Below are the renders of the objects created during this project:</p>
-            <img src="images/render1.png" alt="Render 1" class="render">
-            <img src="images/render2.png" alt="Render 2" class="render">
-        </section>
-      
     </main>
     <footer>
-        <p>Published on GitHub Pages</p>
+        <div class="image-container">
+            <h2>Final Images</h2>
+            <div class="sketch">
+                <img src="Images/dash3.png" alt="Final Dashboard Design">
+            </div>
+            <div class="sketch">
+                <img src="Images/dash4.png" alt="Final Dashboard Overview">
+            </div>
+        </div>
+        <p>© 2024 Emily Rheinbolt. All Rights Reserved.</p>
     </footer>
 
-    <script src="dashboard-script.js"></script> <!-- Move the script here -->
+    <script src="dashboard-script.js"></script> 
 </body>
 </html>
