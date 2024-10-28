@@ -20,12 +20,9 @@ h1, h2 {
 
 main {
     padding: 20px;
-    margin-bottom: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column; /* Default direction */
     padding: 20px;
 }
 
@@ -35,23 +32,17 @@ main {
     margin-bottom: 20px; /* Spacing below images */
 }
 
-.sketch {
+.sketch, .render {
     flex: 1; /* Allow sketches to grow */
     max-width: 45%; /* Maximum width for each sketch */
     margin: 10px; /* Margin around each sketch */
     text-align: center; /* Center align text below sketches */
 }
 
-.sketch img {
+.sketch img, .render img {
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Optional: add rounded corners */
-}
-
-.render {
-    flex: 1; /* Allow renders to grow */
-    max-width: 40%; /* Maximum width for each render */
-    margin: 10px; /* Margin around each render */
 }
 
 footer {
