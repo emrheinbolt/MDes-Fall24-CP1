@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sliding Tile Puzzle</title>
-  <link rel="stylesheet" href="puzzle-styles.css">
+  <title>Lord of the Rings Riddle Puzzle</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Sliding Tile Puzzle</h1>
-  <div id="puzzle-container"></div>
-  <button onclick="shuffleTiles()">New Game</button>
+  <h1>Lord of the Rings Riddle Puzzle</h1>
+  <div id="riddle-container">
+    <p id="riddle-text">Press "Start" to begin your journey...</p>
+    <input type="text" id="answer-input" placeholder="Enter your answer here" disabled />
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <button onclick="startGame()">Start</button>
+    <p id="hint-text"></p>
+  </div>
 
-  <script src="puzzle-script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
